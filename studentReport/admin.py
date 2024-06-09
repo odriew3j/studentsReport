@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import studens
+from .models import studentReport
 
-@admin.register(studens)
-class studensAdmin(admin.ModelAdmin):
-    list_display = ["studensNumber", "studensFierstName", "studensLastName", "created"]
+@admin.register(studentReport)
+class studentReport(admin.ModelAdmin):
+    list_display = ["studentsNumber", "studentsFierstName", "studentsLastName", "created"]
