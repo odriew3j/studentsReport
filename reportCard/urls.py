@@ -16,11 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from . import views
-# from studentReport import views
+# from . import views
+from studentReport import views
 
 urlpatterns = [
-    path('studentReport/', views.studentReport, name='studentReport'),
+    path('studentsreport/', views.students_list, name='studentsreport'),
     path('admin/', admin.site.urls),
     # path("", views.students_list, name="students_list"),
 ]
