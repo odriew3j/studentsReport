@@ -1,6 +1,8 @@
-<h1>student Report</h1>
+<h1>Student Report</h1>
 <br/>
 <ul>
-    {٪ for studentReport in studentsreports %}
+    {% for report in studentReport %}
+        <li>{{ report.field_name }}</li>
+        <!-- Replace field_name with the actual field names you want to display -->
     {% endfor %}
 </ul>
