@@ -1,8 +1,10 @@
+{% load static %}
+
 <h1>Student Report</h1>
 <br/>
 <ul>
-    {% for report in studentReport %}
-        <li>{{ report.field_name }}</li>
+    {% for StudentReport in StudentReport %}
+        <li>{{studentReport.studentsNumber}}</li>
         <!-- Replace field_name with the actual field names you want to display -->
     {% endfor %}
 </ul>
