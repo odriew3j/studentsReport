@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Main Menu</title>
+</head>
+<body>
+    <h1>Main Menu</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>1. اضافه کردن دانشجو</label><br>
+        <label>2. اضافه کردن درس</label><br>
+        <label>3. محاسبه معدل دانشجو</label><br>
+        <label>4. نمایش دروس یک دانشجو</label><br>
+        <label>5. حذف تک درس</label><br>
+        <label>6. حذف کل دروس</label><br>
+        <input type="text" name="choice" placeholder="انتخاب کنید"><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

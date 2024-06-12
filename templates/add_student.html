@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>اضافه کردن دانشجو</title>
+</head>
+<body>
+    <h1>اضافه کردن دانشجو</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label>شماره دانشجویی:</label>
+        <input type="text" name="studentsNumber"><br>
+        <label>نام:</label>
+        <input type="text" name="studentsFierstName"><br>
+        <label>نام خانوادگی:</label>
+        <input type="text" name="studentsLastName"><br>
+        <input type="submit" value="ثبت">
+    </form>
+</body>
+</html>

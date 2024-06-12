@@ -1,10 +1,16 @@
-{% load static %}
+
 
 <h1>Student Report</h1>
 <br/>
+
+<form method="GET" action="{% url 'students_list' %}">
+    <label for="search_input">Search Student by First Name:</label>
+    <input type="text" id="search_input" name="search_text">
+    <button type="submit">Search</button>
+</form>
+
 <ul>
-    {% for StudentReport in StudentReport %}
-        <li>{{studentReport.studentsNumber}}</li>
-        <!-- Replace field_name with the actual field names you want to display -->
+    {% for studentReport in StudentReport %}
+        <li>{{ studentReport.studentsNumber }} - {{ studentReport.studentsFirstName }}  {{ studentReport.studentsLastName }}</li>
     {% endfor %}
 </ul>
